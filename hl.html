@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Test Highlight
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/a11y-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/ocaml.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</head>
+
+<body>
+    <pre>
+        <code class="ocaml">
+            # Int.max_int;;
+            - : int = 4611686018427387903
+            # Int32.max_int;;
+            - : int32 = 2147483647l
+            # Int64.max_int;;
+            - : int64 = 9223372036854775807L
+            # Nativeint.max_int;;
+            - : nativeint = 9223372036854775807n
+            # Int.min_int;;
+            - : int = -4611686018427387904
+            # Int32.min_int;;
+            - : int32 = -2147483648l
+            # Int64.min_int;;
+            - : int64 = -9223372036854775808L
+            # Nativeint.min_int;;
+            - : nativeint = -9223372036854775808n
+        </code>
+    </pre>
+</body>
+
+</html>
